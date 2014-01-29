@@ -9,7 +9,10 @@ var stopSlider = false;
 $(document).ready(function () {
     setPicture(listaSlika[2]);
     renderButtons(listaSlika);
-    atilaSlider(listaSlika, 5000);
+    setTimeout(function () {
+        atilaSlider(listaSlika, 5000);
+    }, 5000);
+    
 });
 
 $(document).on('click', '.changeImageBtn', function () {
