@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href='http://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500,700' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    <header>
+        <div class="top-headline">
+            <img src="~/Images/Logo/Olive%20Invest.png" />
+            <div class="Language">
+
+            </div>
+        </div>
+        <nav>
+            <ul id="menuitems">
+                @*/prime reale estate, pontus montenegro oliv invest, montenegro reale estate /*@
+                <li><a href="@Url.Action("Index","Home")">HOME</a></li>
+                <li><a class="menuitem" href="@Url.Action("Index","AboutUs")">ABOUT US</a></li>
+                <li><a class="menuitem" href="@Url.Action("Index","CurrentDevelopment")">CURENT DEVELOPMENT</a></li>
+                <li><a class="menuitem" href="@Url.Action("Index","FutureDevelopments")">FUTURE DEVELOPMENTS</a></li>
+                <li><a class="menuitem" href="@Url.Action("Index","DestinationBokaBay")">DESTINATION BOKA BAY</a></li>
+                <li><a class="menuitem" href="@Url.Action("Index","ContactUs")">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="body">
+        @RenderBody()
+    </div>
+    <footer>
+        <ul>
+            <li><img src="~/Images/Icons/Phone.png" />+382 68 123 456</li>
+            <li><img src="~/Images/Icons/Email.png" />hello@oliveinvest.com</li>
+            <li><img src="~/Images/Icons/Location.png" />Freedom street 86, Tivat, Montenegro</li>
+        </ul>
+    </footer>
+    <script>
+        $('.menuitem').each(function () {
+            console.log(this.href);
+            console.log(window.location.href);
+            if (this.href == window.location.href) {
+                $(this).addClass("activemenu");
+            }
+        });
+    </script>
+</body>
+
+</html>

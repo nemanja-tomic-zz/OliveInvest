@@ -1,0 +1,455 @@
+﻿body, ul, li, h1, h2, h3, h4, h5, p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Maven-pro',sans-serif;
+}
+
+p {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Prata',serif;
+}
+
+header {
+    background-color: #30363a;
+    background-image: url('/Images/Backgrounds/Top%20banner.jpg');
+    width: 100%;
+    height: 13%;
+    color: #dfb15c;
+    text-align: center;
+    border-bottom: 1px solid #1b2127;
+    position: relative;
+    min-height: 127px;
+}
+
+    header ul li {
+        display: inline;
+        padding-left: 33px;
+        font-size: 13px;
+    }
+
+        header ul li a {
+            text-decoration: none;
+            color: #dfb15c;
+            font-weight: 700;
+        }
+
+.activemenu {
+    text-decoration: underline;
+}
+
+.top-headline {
+    text-align: center;
+    color: white;
+    padding-top: 27px;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+footer {
+    background-color: #30363a;
+    width: 100%;
+    background-image: url('/Images/Backgrounds/Bottom%20banner.jpg');
+    position: absolute;
+    bottom: 0px;
+    height: 4%;
+    text-align: center;
+    color: #dfb15c;
+    border-top: 1px solid #1b2127;
+}
+
+    footer ul {
+        margin-top: 8px;
+    }
+
+        footer ul li {
+            display: inline;
+            font-weight: 700;
+            font-size: 13px;
+            padding-left: 30px;
+        }
+
+
+            footer ul li img {
+                vertical-align: middle;
+                margin-right: 7px;
+                height: 19px;
+            }
+
+body, html {
+    height: 100%;
+}
+
+#body {
+    width: 100%;
+    background-color: black;
+    height: 83%;
+    position: relative;
+}
+/*********************/
+.homePage {
+    width: 100%;
+    height: 100%;
+    /*background: url("/Images/HomePageBackgrounds/Olive%20invest-A%20leader.jpg") no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/****************/
+.aboutusPage {
+    width: 100%;
+    height: 100%;
+    background: url("/Images/Backgrounds/Olive%20Invest-About%20Us%20background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.aboutUs {
+    background-color: #232a30;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    height: 350px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+    .aboutUs > h1 {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        color: white;
+        opacity: 1;
+    }
+
+    .aboutUs > p {
+        color: #dfb15c;
+        width: 700px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        font-size: 12px;
+        opacity: 1;
+    }
+/******************/
+.currentDev {
+    width: 100%;
+    height: 100%;
+    background: url("/Images/Backgrounds/Hotel%20Pontus,Tivat-1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#descriptionBtn, #floorplansBtn {
+    font-weight: 700;
+}
+
+.currentHeadline {
+    background-color: #232a30;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+}
+
+    .currentHeadline h1 {
+        padding: 10px 0px 8px 0px;
+        opacity: 1;
+    }
+
+    .currentHeadline > ul {
+        list-style: none;
+        padding-bottom: 12px;
+    }
+
+        .currentHeadline > ul li {
+            display: inline;
+            color: #dfb15c;
+            font-size: 13px;
+            margin-right: 30px;
+        }
+
+#cont1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    background-color: #232a30;
+    opacity: 0.9;
+    color: white;
+    display: none;
+    height: 150px;
+    text-align: center;
+}
+
+    #cont1 > p {
+        padding-top: 40px;
+        font-weight: 700;
+        font-size: 12px;
+        color: #dfb15c;
+        opacity: 1;
+        z-index: 1;
+        line-height: 22px;
+    }
+
+
+#cont2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: #232a30;
+    opacity: 0.9;
+    color: white;
+    display: none;
+    height: 80%;
+}
+
+    #cont2 ul {
+        list-style: none;
+    }
+
+        #cont2 ul > li {
+            color: #dfb15c;
+            list-style: none;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+#floorMenu {
+    height: 100%;
+    width: 150px;
+    /*border-right:1px solid white;*/
+    float: left;
+    overflow: auto;
+}
+
+    #floorMenu ul {
+        padding-left: 35px;
+        display: block;
+        padding-top: 245px;
+    }
+
+        #floorMenu ul li {
+            border-bottom: 1px solid #dfb15c;
+            line-height: 32px;
+        }
+
+#plans {
+    float: right;
+}
+
+    #plans img {
+        width: 700px;
+        margin-top: 70px;
+        margin-right: 70px;
+    }
+
+
+/*************/
+.destinationPage {
+    width: 100%;
+    height: 100%;
+    background: url("/Images/Backgrounds/Montenegro.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.destinContent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 660px;
+    background-color: #232a30;
+    opacity: 0.9;
+    color: white;
+    height: 187px;
+    text-align: center;
+}
+
+    .destinContent h1 {
+        padding-top: 15px;
+    }
+
+    .destinContent p {
+        margin-top: 15px;
+        font-size: 12px;
+        color: #dfb15c;
+        font-weight: 500;
+    }
+/******************/
+.contactUs {
+    background-color: #232a30;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+    .contactUs * {
+    }
+
+.contactForm {
+    padding-top: 86px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 646px;
+    height: 60%;
+    /*border: 1px solid white;*/
+}
+
+.contactUs h1 {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.contactUs p {
+    color: #dfb15c;
+    font-size: 11px;
+}
+
+.contactUs textarea {
+    background-image: url('/Images/Backgrounds/xx.jpg');
+    background-repeat: repeat-x repeat-y;
+    border: 0px;
+    color: #dfb15c;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    line-height: 43px;
+    width: 614px;
+    max-height: 200px;
+    max-width: 700px;
+    resize: none;
+    outline: none;
+}
+
+#name, #phone, #email {
+    border: none;
+    border-bottom: 1px solid #dfb15c;
+    background: none;
+    color: #dfb15c;
+    height: 23px;
+    outline: none;
+}
+
+#name {
+    margin-right: 130px;
+}
+
+#email {
+    left: 0;
+    margin-right: 374px;
+}
+
+::-webkit-input-placeholder {
+    color: #dfb15c;
+    font-size: 16px;
+}
+/********************/
+.futurePage {
+    width: 100%;
+    height: 100%;
+    background: url("/Images/Backgrounds/ACCamera_3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/*************************/
+.slider1:hover {
+      cursor:default;
+    }
+
+.slider1 {
+    font-family: 'Prata',serif;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+}
+
+    .slider1 h1 {
+        color: white;
+    }
+
+    .slider1 a {
+        text-decoration: none;
+        border: 1px solid #dfb15c;
+        padding: 5px 25px 5px 25px;
+        font-size: 11px;
+        color: #dfb15c;
+        position: relative;
+        right: 0px;
+        float: right;
+        font-weight: 700;
+    }
+
+.slider2 {
+    font-family: 'Prata',serif;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+
+    .slider2 h1 {
+        color: white;
+    }
+
+    .slider2 a {
+        margin-top:15px;
+        text-decoration: none;
+        border: 1px solid #dfb15c;
+        padding: 5px 25px 5px 25px;
+        font-size: 11px;
+        color: #dfb15c;
+        position: relative;
+        right: 0px;
+        float: right;
+        font-weight: 700;
+    }
+    .slider2:hover {
+      cursor:default;
+    }
+
+.slider3 {
+    font-family: 'Prata',serif;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 42%;
+}
+
+    .slider3 h1 {
+        color: white;
+    }
+
+    .slider3 a {
+        margin-top:15px;
+        text-decoration: none;
+        border: 1px solid #dfb15c;
+        padding: 5px 25px 5px 25px;
+        font-size: 11px;
+        color: #dfb15c;
+        position: relative;
+        right: 0px;
+        float: right;
+        font-weight: 700;
+
+    }
+    .slider3:hover {
+      cursor:default;
+    }
+
