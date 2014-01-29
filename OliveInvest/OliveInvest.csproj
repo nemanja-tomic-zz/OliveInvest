@@ -276,10 +276,10 @@
     <None Include="Properties\PublishProfiles\Olive.pubxml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Images\Backgrounds\ACCamera_3.jpg" />
+    <Content Include="Images\Backgrounds\Boka.jpg" />
     <Content Include="Images\Backgrounds\Bottom banner.jpg" />
     <Content Include="Images\Backgrounds\cus.jpg" />
     <Content Include="Images\Backgrounds\Hotel Pontus,Tivat-1.jpg" />
-    <Content Include="Images\Backgrounds\Montenegro.jpg" />
     <Content Include="Images\Backgrounds\Olive Invest-About Us background.jpg" />
     <Content Include="Images\Backgrounds\Olive invest-first slidet.jpg" />
     <Content Include="Images\Backgrounds\Olive invest-second slidet.jpg" />
