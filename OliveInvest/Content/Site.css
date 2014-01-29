@@ -105,6 +105,7 @@ body, html {
     width: 100%;
     height: 100%;
     background: url("/Images/Backgrounds/Olive%20Invest-About%20Us%20background.jpg") no-repeat center center fixed;
+    background-position: 0px 140px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -117,8 +118,7 @@ body, html {
     position: relative;
     text-align: center;
     height: 350px;
-    font-weight: 700;
-    opacity: 0.9;
+    opacity: 1;
 }
 
     .aboutUs > h1 {
@@ -137,6 +137,7 @@ body, html {
         position: relative;
         font-size: 12px;
         opacity: 1;
+        font-weight: 500;
     }
 /******************/
 .currentDev {
@@ -256,7 +257,7 @@ body, html {
 .destinationPage {
     width: 100%;
     height: 100%;
-    background: url("/Images/Backgrounds/Montenegro.jpg") no-repeat center center fixed;
+    background: url("/Images/Backgrounds/Boka.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -292,8 +293,7 @@ body, html {
     text-align: center;
 }
 
-    .contactUs * {
-    }
+
 
 .contactForm {
     padding-top: 86px;
@@ -326,7 +326,7 @@ body, html {
     margin: 0px;
     margin-top: 30px;
     line-height: 43px;
-    width: 614px;
+    width: 100%;
     max-height: 200px;
     max-width: 700px;
     resize: none;
@@ -359,18 +359,30 @@ body, html {
 .futurePage {
     width: 100%;
     height: 100%;
-    background: url("/Images/Backgrounds/ACCamera_3.jpg") no-repeat center center fixed;
+    background-color: #232a30;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    text-align: center;
+    position: relative;
 }
+
+    .futurePage h1 {
+        font-family: 'Prata',serif;
+        color: white;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    }
 
 
 /*************************/
 .slider1:hover {
-      cursor:default;
-    }
+    cursor: default;
+}
 
 .slider1 {
     font-family: 'Prata',serif;
@@ -409,7 +421,7 @@ body, html {
     }
 
     .slider2 a {
-        margin-top:15px;
+        margin-top: 15px;
         text-decoration: none;
         border: 1px solid #dfb15c;
         padding: 5px 25px 5px 25px;
@@ -420,8 +432,9 @@ body, html {
         float: right;
         font-weight: 700;
     }
+
     .slider2:hover {
-      cursor:default;
+        cursor: default;
     }
 
 .slider3 {
@@ -437,7 +450,7 @@ body, html {
     }
 
     .slider3 a {
-        margin-top:15px;
+        margin-top: 15px;
         text-decoration: none;
         border: 1px solid #dfb15c;
         padding: 5px 25px 5px 25px;
@@ -447,9 +460,8 @@ body, html {
         right: 0px;
         float: right;
         font-weight: 700;
-
     }
+
     .slider3:hover {
-      cursor:default;
+        cursor: default;
     }
-
