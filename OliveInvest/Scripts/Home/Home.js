@@ -8,5 +8,20 @@ $(document).ready(function () {
     setPicture(listaSlika[listaSlika.length - 1]);
     renderButtons(listaSlika);
     atilaSlider(listaSlika, sliderTimeout);
+    setHeight("#body");
+    setHeight(".homePage");
 });
+
+$(window).resize(function () {
+    setHeight("#body");
+    setHeight(".homePage");
+});
+
+function setHeight(element) {
+    var totalHeight = $(window).height();
+    var headerHeight = $("header").height();
+    var footerHeight = $("footer").height();
+    var b = totalHeight - headerHeight - footerHeight;
+    $(element).height(b);
+}
 
