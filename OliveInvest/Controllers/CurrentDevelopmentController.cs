@@ -12,6 +12,7 @@ namespace OliveInvest.Controllers
         // GET: /CurrentDevelopment/
         public ActionResult Index()
         {
+            ViewBag.Title = "Current Development - Olive Invest";
             return View();
         }
 	}

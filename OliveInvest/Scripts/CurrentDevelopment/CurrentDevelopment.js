@@ -8,7 +8,7 @@ function atilaSlider(picList, timeout, picIndex) {
         defaultIndex = picIndex;
     }
 
-    window.HomeSlider = setInterval(function () {
+    window.CurDevSlider = setInterval(function () {
         defaultIndex = (defaultIndex != undefined && defaultIndex < picList.length) ? defaultIndex : 0;
         setPicture(picList[defaultIndex]);
         defaultIndex++;
@@ -26,7 +26,7 @@ function startSlider() {
 }
 
 function stopSlider() {
-    clearInterval(window.HomeSlider);
+    clearInterval(window.CurDevSlider);
 }
 
 function setPictureInstant(aoPicture) {

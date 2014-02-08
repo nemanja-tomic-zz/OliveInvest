@@ -193,17 +193,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutUsController.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\CurrentDevelopmentController.cs" />
     <Compile Include="Controllers\DestinationBokaBayController.cs" />
     <Compile Include="Controllers\FutureDevelopmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -284,6 +282,11 @@
     <Content Include="Images\Backgrounds\Olive invest-Third slidet.jpg" />
     <Content Include="Images\Backgrounds\Top Banner.jpg" />
     <Content Include="Images\Backgrounds\xx.jpg" />
+    <Content Include="Images\CurrentBg\Hotel Pontus, Tivat -1.jpg" />
+    <Content Include="Images\CurrentBg\Hotel Pontus, Tivat -2.jpg" />
+    <Content Include="Images\CurrentBg\Hotel Pontus, Tivat -3.jpg" />
+    <Content Include="Images\CurrentBg\Hotel Pontus, Tivat -4.jpg" />
+    <Content Include="Images\CurrentBg\Hotel Pontus, Tivat -5.jpg" />
     <Content Include="Images\Floor Plans\First Floor.png" />
     <Content Include="Images\Floor Plans\Garage Floorplans.png" />
     <Content Include="Images\Floor Plans\Ground Floor.png" />
@@ -295,7 +298,9 @@
     <Content Include="Images\Icons\Email.png" />
     <Content Include="Images\Icons\Location.png" />
     <Content Include="Images\Icons\Phone.png" />
+    <Content Include="Images\Logo\Olive Invest Logo.png" />
     <Content Include="Images\Logo\Olive Invest.png" />
+    <Content Include="Scripts\ContactUs\ContactUs.js" />
     <Content Include="Scripts\CurrentDevelopment\CurDev.js" />
     <Content Include="Scripts\Home\Home.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />

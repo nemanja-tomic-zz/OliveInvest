@@ -14,9 +14,8 @@
 <body>
     <header>
         <div class="top-headline">
-            <img src="~/Images/Logo/Olive%20Invest.png" />
+            <a style="outline:none; text-decoration:none" href="@Url.Action("Index","Home")"><img src="~/Images/Logo/Olive%20Invest%20Logo.png" /></a>
             <div class="Language">
-
             </div>
         </div>
         <nav>
@@ -36,15 +35,13 @@
     </div>
     <footer>
         <ul>
-            <li><img src="~/Images/Icons/Phone.png" />+382 68 123 456</li>
-            <li><img src="~/Images/Icons/Email.png" />hello@oliveinvest.com</li>
-            <li><img src="~/Images/Icons/Location.png" />Freedom street 86, Tivat, Montenegro</li>
+            <li><img src="~/Images/Icons/Phone.png" />+382 67 914 8277</li>
+            <li><img src="~/Images/Icons/Email.png" />info@oliveinvest.com</li>
+            <li><img src="~/Images/Icons/Location.png" />Šetalište Iva Vizina, 85320, Tivat, Montenegro</li>
         </ul>
     </footer>
     <script>
         $('.menuitem').each(function () {
-            console.log(this.href);
-            console.log(window.location.href);
             if (this.href == window.location.href) {
                 $(this).addClass("activemenu");
             }

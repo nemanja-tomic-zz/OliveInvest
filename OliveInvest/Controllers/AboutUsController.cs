@@ -10,6 +10,7 @@ namespace OliveInvest.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "About Us - Olive Invest";
             return View();
         }
 	}

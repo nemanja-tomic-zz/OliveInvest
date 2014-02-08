@@ -1,17 +1,19 @@
-﻿<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+﻿<script src="~/Scripts/ContactUs/ContactUs.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
 <div class="contactUs">
-    <div class="contactForm">
+    <div class="contactForm" style="display:none">
         <h1>CONTACT FORM</h1>
         <p style="margin-bottom:30px;">For a full list of our offers or to inquire about future developments please get in touch using informations below. </p>
         <p style="overflow:auto">
-            <input style="float:left" type="text" id="name" placeholder="Name" size="40"/>
+            <input style="float:left" type="text" id="name" placeholder="Name" size="40" />
             <input style="float:right" type="text" id="phone" placeholder="Phone (optional)" size="40" />
             <input style="float:left; margin-top:25px;" type="text" id="email" placeholder="Email" size="40" />
         </p>
         <br />
 
-        <textarea placeholder="Type your message here" cols="40" rows="4"></textarea>
+        <textarea placeholder="Type your message here" id="message" cols="40" rows="4"></textarea>
         <br />
-        <a style="float: right;font-weight:bold; font-size:12px; padding: 5px 35px 5px 35px; border: 1px solid rgb(223, 177, 92); color: rgb(223, 177, 92); ">SEND</a>
+        <a  id="contactSubmit" style="float: right;font-weight:bold; font-size:12px; padding: 5px 35px 5px 35px; border: 1px solid rgb(223, 177, 92); color: rgb(223, 177, 92); ">SEND</a>
+        <p id="validationMessage"></p>
     </div>
 </div>

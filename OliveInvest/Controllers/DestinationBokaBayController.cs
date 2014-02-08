@@ -12,6 +12,7 @@ namespace OliveInvest.Controllers
         // GET: /DestinationBokaBay/
         public ActionResult Index()
         {
+            ViewBag.Title = "Destination Boka Bay - Olive Invest";
             return View();
         }
 	}
