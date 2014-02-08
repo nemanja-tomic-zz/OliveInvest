@@ -17,7 +17,7 @@ function atilaSlider(picList, timeout, picIndex) {
 
 function renderButtons(aoImageList) {
     $.each(aoImageList, function (i, toImage) {
-        $(".sliderButtons").append('<div class="xzc" data-x="' + i + '" id="image"' + i + '" data-id="' + i + '" data-url="' + toImage.url + '"></div>');
+        $(".sliderButtons").append('<div class="xzca" data-x="' + i + '" id="image"' + i + '" data-id="' + i + '" data-url="' + toImage.url + '"></div>');
     });
 }
 
@@ -31,25 +31,25 @@ function stopSlider() {
 
 function setPictureInstant(aoPicture) {
     activeImage = aoPicture.url;
-    $('.homePage').css('background', 'url("' + aoPicture.url + '") no-repeat center center fixed');
-    $('.homePage').css('-webkit-background-size', 'cover');
-    $('.homePage').css('background-size', 'cover');
-    $('.homePage').css('-moz-background-size', 'cover');
-    $('.homePage').css('-o-background-size', 'cover');
+    $('.currentDev').css('background', 'url("' + aoPicture.url + '") no-repeat center center fixed');
+    $('.currentDev').css('-webkit-background-size', 'cover');
+    $('.currentDev').css('background-size', 'cover');
+    $('.currentDev').css('-moz-background-size', 'cover');
+    $('.currentDev').css('-o-background-size', 'cover');
     $('.mojText').html(aoPicture.text);
 }
 
 function setPicture(aoPicture) {
     activeImage = aoPicture.url;
-    $('.homePage').fadeTo(800, 0.15, function () {
-        $('.homePage').css('background', 'url("' + aoPicture.url + '") no-repeat center center  fixed');
-        $('.homePage').css('-webkit-background-size', 'cover');
-        $('.homePage').css('background-size', 'cover');
-        $('.homePage').css('-moz-background-size', 'cover');
-        $('.homePage').css('-o-background-size', 'cover');
+    $('.currentDev').fadeTo(800, 0.15, function () {
+        $('.currentDev').css('background', 'url("' + aoPicture.url + '") no-repeat center center  fixed');
+        $('.currentDev').css('-webkit-background-size', 'cover');
+        $('.currentDev').css('background-size', 'cover');
+        $('.currentDev').css('-moz-background-size', 'cover');
+        $('.currentDev').css('-o-background-size', 'cover');
         $('.mojText').html(aoPicture.text);
 
-        $('.xzc').each(function () {
+        $('.xzca').each(function () {
             $(this).css('background-color', 'transparent');
             if (activeImage == $(this).attr('data-url')) {
                 $(this).css('background-color', '#dfb15c');
@@ -59,7 +59,7 @@ function setPicture(aoPicture) {
     }).fadeTo(800, 1, function () { });
 }
 
-$(document).on('click', '.xzc', function () {
+$(document).on('click', '.xzca', function () {
     var liCurrentImageID = parseInt($(this).data('id'), 10);
     if ($(this).data('url') == activeImage) {
         return;

@@ -302,6 +302,7 @@
     <Content Include="Images\Logo\Olive Invest.png" />
     <Content Include="Scripts\ContactUs\ContactUs.js" />
     <Content Include="Scripts\CurrentDevelopment\CurDev.js" />
+    <Content Include="Scripts\CurrentDevelopment\CurrentDevelopment.js" />
     <Content Include="Scripts\Home\Home.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
