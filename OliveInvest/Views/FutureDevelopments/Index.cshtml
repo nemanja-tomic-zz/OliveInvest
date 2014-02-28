@@ -1,3 +1,25 @@
 ﻿<div class="futurePage">
     <h1>STAY CONNECTED FOR MORE INFORMATIONS<br />ABOUT FUTURE DEVELOPMENTS</h1>
 </div>
+<script>
+    $(document).ready(function () {
+
+        setHeight("#body");
+        setHeight(".futurePage");
+    });
+
+    $(window).resize(function () {
+        setHeight("#body");
+        setHeight(".futurePage");
+    });
+
+    function setHeight(element) {
+        var totalHeight = $(window).height();
+        var headerHeight = $("header").height();
+        var footerHeight = $("footer").height();
+        var b = totalHeight - headerHeight - footerHeight;
+        $(element).height(b);
+    }
+
+
+</script>

@@ -22,6 +22,7 @@ header {
     color: #dfb15c;
     text-align: center;
     padding-bottom:13px;
+    border-bottom:1px solid #1b2127;
 }
 
     header ul li {
@@ -59,7 +60,7 @@ footer {
     height: 40px;
     text-align: center;
     color: #dfb15c;
-    border-top: 1px solid #1b2127;
+    /*border-top: 1px solid #1b2127;*/
     /*min-height: 40px;*/
 }
 
@@ -121,7 +122,7 @@ body, html {
     width: 100%;
     position: relative;
     text-align: center;
-    height: 350px;
+    height: 260px;
     opacity: 1;
 }
 
@@ -134,7 +135,7 @@ body, html {
 
     .aboutUs > p {
         color: #dfb15c;
-        width: 700px;
+        width: 710px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -240,16 +241,16 @@ body, html {
 
 #floorMenu {
     height: 100%;
-    width: 150px;
-    /*border-right:1px solid white;*/
+    width: 210px;
     float: left;
     overflow: auto;
+    padding-left:35px;
 }
 
     #floorMenu ul {
         padding-left: 35px;
         display: block;
-        padding-top: 245px;
+        padding-top: 180px;
     }
 
         #floorMenu ul li {
@@ -259,6 +260,7 @@ body, html {
 
 #plans {
     float: right;
+    width: 700px;
 }
 
     #plans img {
@@ -270,6 +272,7 @@ body, html {
 
 /*************/
 .destinationPage {
+    
     width: 100%;
     height: 100%;
     background: url("/Images/Backgrounds/Boka.jpg") no-repeat center center fixed;
@@ -277,9 +280,12 @@ body, html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position-y:127px;
 }
 
 .destinContent {
+    position:absolute;
+    top:127px;
     margin-left: auto;
     margin-right: auto;
     width: 660px;
@@ -508,5 +514,5 @@ body, html {
 
 .strelicaSpan {
     position:absolute;
-    left: 15px;
+    left: 35px;
 }

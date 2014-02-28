@@ -2,9 +2,31 @@
     <div class="aboutUs">
         <h1>ABOUT OLIVE INVEST</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet purus venenatis, posuere quam sit amet, posuere massa. Morbi eget sem fringilla, consequat felis id, euismod erat. Nunc eget libero ut nisl interdum elementum. Quisque sit amet urna quis lacus pulvinar fringilla. Maecenas vitae ante eget dolor congue aliquam eu consequat arcu. Aliquam laoreet enim ac nisi semper lobortis. Quisque massa nisi, tincidunt at ultricies eu, blandit in nulla. Praesent dapibus neque at augue hendrerit, non imperdiet urna euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br /><br />
-
-            Nunc eget libero ut nisl interdum elementum. Quisque sit amet urna quis lacus pulvinar fringilla. Maecenas vitae ante eget dolor congue aliquam eu consequat arcu. Aliquam laoreet enim ac nisi semper lobortis. Quisque massa nisi, tincidunt at ultricies eu, blandit in nulla. Praesent dapibus neque at augue hendrerit, non imperdiet urna euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Olive Invest is a leading Montenegro luxury real estate development company which quickly cultivated a reputation as a trendsetter. Olive Invest creates high-end residential, commercial, land and mixed-use projects known for originality, attention to detail, and rich quality of community life. Olive Invest develops projects that positively impact and improve lives. <br /><br />
+            Each property they take on is selected carefully with a special vision in mind. <br />
+            Their passion for Montenegro is displayed by their active role in charitable, civic, arts and cultural organizations.
         </p>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+     
+        setHeight("#body");
+        setHeight(".homePage");
+    });
+
+    $(window).resize(function () {
+        setHeight("#body");
+        setHeight(".aboutusPage");
+    });
+
+    function setHeight(element) {
+        var totalHeight = $(window).height();
+        var headerHeight = $("header").height();
+        var footerHeight = $("footer").height();
+        var b = totalHeight - headerHeight - footerHeight;
+        $(element).height(b);
+    }
+
+
+</script>

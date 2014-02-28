@@ -4,3 +4,37 @@
         <p>Nested in between the cliffs of mount Lovcen and the Mediterranean waves, the Boka Bay <br/> represents a geographical miracle. Europe’s southernmost fjord, reflecting old town buildings and <br /> fortifications in its waters, is a UNESCO protected heritage site. The past and the present of this <br /> picturesque bay is characterized by a vibrant Mediterranean culture and rich maritime history.<br /><br />For more info visit: www.visitmontenegro.net</p>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        setHeight("#body");
+        setHeight(".destinationPage");
+        centroralizer('.destinContent');
+        window.onload(function () {
+            setHeight("#body");
+            setHeight(".destinationPage");
+        });
+    });
+ 
+
+
+    $(window).resize(function () {
+        setHeight("#body");
+        setHeight(".destinationPage");
+        centroralizer(".destinContent");
+    });
+
+    function centroralizer(element) {
+        var totalWidth = $(window).width();
+        var elementWidth = $(element).width();
+        var vrednost = (totalWidth - elementWidth) / 2;
+        $(element).css('left', vrednost);
+    }
+
+    function setHeight(element) {
+        var totalHeight = $(window).height();
+        var headerHeight = $("header").height() -118;
+        var footerHeight = $("footer").height();
+        var b = totalHeight - headerHeight - footerHeight - 60 - 31;
+        $(element).height(b);
+    }
+</script>

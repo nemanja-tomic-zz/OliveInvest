@@ -48,11 +48,11 @@ $(document).on('click', '.planLink', function (e) {
 });
 
 var listaSlika = [
-    { url: '/Images/CurrentBg/Hotel%20Pontus,%20Tivat%20-1.jpg', text: '' },
-    { url: '/Images/CurrentBg/Hotel%20Pontus,%20Tivat%20-2.jpg', text: '' },
-    { url: '/Images/CurrentBg/Hotel%20Pontus,%20Tivat%20-3.jpg', text: '' },
-    { url: '/Images/CurrentBg/Hotel%20Pontus,%20Tivat%20-4.jpg', text: '' },
-    { url: '/Images/CurrentBg/Hotel%20Pontus,%20Tivat%20-5.jpg', text: '' }
+    { url: '/Images/CurrentBg2/Hotel%20Pontus,%20Tivat%20-1.jpg', text: '' },
+    { url: '/Images/CurrentBg2/Hotel%20Pontus,%20Tivat%20-2.jpg', text: '' },
+    { url: '/Images/CurrentBg2/Hotel%20Pontus,%20Tivat%20-3.jpg', text: '' },
+    { url: '/Images/CurrentBg2/Hotel%20Pontus,%20Tivat%20-4.jpg', text: '' },
+    { url: '/Images/CurrentBg2/Hotel%20Pontus,%20Tivat%20-5.jpg', text: '' }
 ];
 
 $(document).ready(function () {
@@ -63,6 +63,11 @@ $(document).ready(function () {
     atilaSlider(listaSlika, sliderTimeout);
     havrz('.forHavrz');
     havrz('.planLink');
+
+    for (var i = 0; i < listaSlika.length; i++) {
+        $('<img/>')[0].src = listaSlika[i].url;
+    }
+
 });
 
 $(window).resize(function () {
